@@ -1,0 +1,31 @@
+{
+	"name": "Json_dynamic",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"container": {
+				"type": "string"
+			},
+			"folder": {
+				"type": "string"
+			},
+			"file": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "@dataset().file",
+				"folderPath": "@dataset().folder",
+				"fileSystem": "@dataset().container"
+			}
+		},
+		"schema": {}
+	}
+}
