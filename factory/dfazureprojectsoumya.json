@@ -1,0 +1,9 @@
+{
+	"name": "dfazureprojectsoumya",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "03d7f80f-9b2c-4037-9a59-a49dbf0e25c9",
+		"tenantId": "7a444b79-bebd-43a1-8796-abfd4815928d"
+	}
+}
